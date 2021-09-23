@@ -1,0 +1,14 @@
+home page
+ product image & product name
+
+details page
+product name
+product category
+product image
+product size
+product description
+
+database Table 1
+category
+database Table 2
+product
