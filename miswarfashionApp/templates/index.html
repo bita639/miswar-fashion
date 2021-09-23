@@ -1,0 +1,82 @@
+{% extends 'home-base/base.html' %}
+{% load static %}
+{% block slider %}
+ <!-- Single -->
+ <div class="single-slider slider-bg1 hero-overly slider-height d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+                <!-- Hero Caption -->
+                <div class="hero__caption">
+                    <h1>fashion<br>changing<br>always</h1>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Single -->
+<div class="single-slider slider-bg2 hero-overly slider-height d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+                <!-- Hero Caption -->
+                <div class="hero__caption">
+                    <h1>fashion<br>changing<br>always</h1>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Single -->
+<div class="single-slider slider-bg3 hero-overly slider-height d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9">
+                <!-- Hero Caption -->
+                <div class="hero__caption">
+                    <h1>fashion<br>changing<br>always</h1>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block popular %}
+<div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+        <div class="popular-img">
+            <img src="{% static 'img/gallery/popular1.png' %}" alt="">
+            <div class="img-cap">
+                <span>Glasses</span>
+            </div>
+            <div class="favorit-items">
+             <a href="shop.html" class="btn">Shop Now</a>
+         </div>
+     </div>
+ </div>
+</div>
+{% endblock %}
+
+{% block arrival %}
+
+<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+        <div class="popular-img">
+            <img src="{% static 'img/gallery/arrival4.png' %}" alt="">
+            <div class="favorit-items">
+                <!-- <span class="flaticon-heart"></span> -->
+                <img src="{% static 'img/gallery/favorit-card.png' %}" alt="">
+            </div>
+        </div>
+        <div class="popular-caption">
+            <h3><a href="product_details.html">Knitted Jumper</a></h3>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
