@@ -1,0 +1,53 @@
+{% extends 'base/shop-base.html' %}
+{% load static %}
+
+{% block details %}
+<div class="category-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-7 col-lg-8 col-md-10">
+                <div class="section-tittle mb-50">
+                    <h1>Our Lastest Products</h1>
+                    <p>Browse from 230 latest items</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--? Left content -->
+          
+            <!--?  Right content -->
+            <div class="col-xl-12 col-lg-9 col-md-8 ">
+                <!--? New Arrival Start -->
+                <div class="new-arrival new-arrival2">
+                    <div class="row">
+
+                        {% for product in products %}
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                            <div class="single-new-arrival mb-50 text-center">
+                                <div class="popular-img">
+                                    <img src="{{ product.image.url }}" alt="">
+                                   
+                                </div>
+                                <div class="popular-caption">
+                                 <h3><a href="{{ product.get_absolute_url }}">{{ product.name }}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                  
+
+
+</div>
+<!-- Button -->
+<div class="row justify-content-center">
+<div class="room-btn mt-20">
+<a href="catagori.html" class="border-btn">Browse More</a>
+</div>
+</div>
+</div>
+<!--? New Arrival End -->
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
