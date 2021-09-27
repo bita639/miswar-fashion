@@ -9,7 +9,7 @@
                 <!-- Hero Caption -->
                 <div class="hero__caption">
                     <h1>fashion<br>changing<br>always</h1>
-                    <a href="shop.html" class="btn">Shop Now</a>
+                    <a href="{% url 'miswarfashionApp:shop' %}" class="btn">Check Products</a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                 <!-- Hero Caption -->
                 <div class="hero__caption">
                     <h1>fashion<br>changing<br>always</h1>
-                    <a href="shop.html" class="btn">Shop Now</a>
+                    <a href="{% url 'miswarfashionApp:shop' %}" class="btn">Check Products</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 <!-- Hero Caption -->
                 <div class="hero__caption">
                     <h1>fashion<br>changing<br>always</h1>
-                    <a href="shop.html" class="btn">Shop Now</a>
+                    <a href="{% url 'miswarfashionApp:shop' %}" class="btn">Check Products</a>
                 </div>
             </div>
         </div>
@@ -45,21 +45,6 @@
 </div>
 {% endblock %}
 
-{% block popular %}
-<div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-        <div class="popular-img">
-            <img src="{% static 'img/gallery/popular1.png' %}" alt="">
-            <div class="img-cap">
-                <span>Glasses</span>
-            </div>
-            <div class="favorit-items">
-             <a href="shop.html" class="btn">Shop Now</a>
-         </div>
-     </div>
- </div>
-</div>
-{% endblock %}
 
 {% block arrival %}
 

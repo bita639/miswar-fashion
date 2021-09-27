@@ -1,10 +1,17 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Product
+from .models import Category, Product, Image
 
 # Create your views here.
 
 def contact(request):
     return render(request, 'contact.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def gallery(request):
+    photo = Image.objects.all() 
+    return render(request, 'gallery.html',{'photo': photo})
 
 
 def product_detail(request, id, slug):    

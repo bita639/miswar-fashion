@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="{% static 'css/slick.css' %}">
     <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    
+    <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+
 </head>
 <body class="full-wrapper">
     <!-- ? Preloader Start -->
@@ -34,8 +35,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <h2>Logo</h2>
-                    <img src="{% static 'img/logo/loder.png' %}" alt="Logo">
+                    <img src="{% static 'img/logo/logo.png' %}" alt="Logo">
                 </div>
             </div>
         </div>
@@ -59,8 +59,8 @@
                                     <ul id="navigation">
                                         <li><a href="{% url 'miswarfashionApp:home' %}">Home</a></li> 
                                         <li><a href="{% url 'miswarfashionApp:shop' %}">shop</a></li>
-                                        <li><a href="#">Photo gallery</a></li>
-                                        <li><a href="#">About</a></li>
+                                        <li><a href="{% url 'miswarfashionApp:gallery' %}">Photo gallery</a></li>
+                                        <li><a href="{% url 'miswarfashionApp:about' %}">About</a></li>
                                         <li><a href="{% url 'miswarfashionApp:contact' %}">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -69,9 +69,9 @@
                         <div class="header-right1 d-flex align-items-center">
                             <!-- Social -->
                             <div class="header-social d-none d-md-block">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="https://www.linkedin.com/company/exconbd/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/EXCONBD"><i class="fab fa-facebook-f"></i></a>
+                                
                             </div>
                             <!-- Search Box -->
                            
@@ -159,7 +159,7 @@
                       <!-- logo -->
                       <div class="footer-logo mb-35">
 
-                       <a href=".#"><img src="{% static 'img/logo/logo2_footer.png' %}" alt=""></a>
+                       <a href=".#"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
                    </div>
                    <div class="footer-tittle">
                        <div class="footer-pera">
@@ -169,50 +169,15 @@
                    </div>
                    <!-- social -->
                    <div class="footer-social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.linkedin.com/company/exconbd/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/EXCONBD"><i class="fab fa-facebook-f"></i></a>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-        <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-                <h4>Quick links</h4>
-                <ul>
-                    <li><a href="#">Image Licensin</a></li>
-                    <li><a href="#">Style Guide</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-        <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-                <h4>Shop Category</h4>
-                <ul>
-                    <li><a href="#">Image Licensin</a></li>
-                    <li><a href="#">Style Guide</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
-        <div class="single-footer-caption mb-50">
-            <div class="footer-tittle">
-                <h4>Pertners</h4>
-                <ul>
-                    <li><a href="#">Image Licensin</a></li>
-                    <li><a href="#">Style Guide</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
+
+    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
         <div class="single-footer-caption mb-50">
             <div class="footer-tittle">
                 <h4>Get in touch</h4>
@@ -299,6 +264,8 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="{% static 'js/plugins.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/slider.js' %}"></script>
+
 
 </body>
 </html>

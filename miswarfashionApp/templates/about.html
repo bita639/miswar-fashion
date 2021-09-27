@@ -1,0 +1,91 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block header %}
+    <div class="page-notification page-notification2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="{% url 'miswarfashionApp:home' %}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'miswarfashionApp:about' %}">About-us</a></li> 
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block details %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-tittle mb-60 text-center pt-10">
+                    <h2>Our Story</h2>
+                    <p >Miswar Fashion Wears, is a 100% export oriented composite knit garments factory. Mainly
+                        oriented towards manufacturing &amp; exporting knit garments product. Situated in 252 RAMAR
+                        BAG, KUTUBPUR, FATULLAH, NARAYANGANJ, Bangladesh, Establishment at 1998. Its Number of
+                        Employee is 350.</p>
+                        <p>Factory Floor Space is 1,40,000 sft. Factory Equipment consist of Different types of Knitting,
+                            Dyeing, Cutting, Sewing, Finishing, Embroidery and Generator machines and supplied by mostly
+                            Japan, Taiwan, U.K, USA, Singapore, etc... Main Product Basic is T-shirt, Tank top, Long Sleeve T-
+                            Shirt, Polo Shirt, Shorts, Sweat Shirt, Knit Jacket, Pajama Set, Ladis &amp; Kids, Infant Knitwear &amp; All
+                            Kinds of Knit Garments &amp; Knit Fabrics.</p>
+                        <p>Production Capacity Knitting, 10 Ton/day (Average) Dyeing: 10 Ton/day (Average), Sewing: 45000
+                            pcs/day (Average) Main Customer is from UK. Italy. France, Germani, Belgium, Spain, Sweden,
+                            USA, Russia, Netherland, Payment Terms Confirmed Irrevocable Letter of Credit.</p>
+                        
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="about-img pb-bottom">
+                    <img src="{% static 'img/gallery/about1.png' %}" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-tittle mb-60 text-center pt-10">
+                    <h2>Quality Control &amp; Assurance</h2>
+                    <p >Throughout its decade-long operation, Miswar Fashion Wears has perfected its Quality Control
+                        System, which includes scrupulous checks, to ensure flawless production. The experienced
+                        Quality-Assurance (QA) team extends its operation even into the procurement of raw-materials
+                        and machinery. </p>
+                         <p>Miswar Fashion Wears has continuously restructured this system, and it now features a
+                            unique capability in terms of industry-low rework and repair rate. It has acquired the latest
+                            Quality-Control equipment, and developed quality-consciousness among the workforce. Due to
+                            its firm grip on quality regulations, Miswar Fashion Wears can meet the best
+                            AQL requirements of clients.</p>
+                            <p>Miswar Fashion Wears QA team provides no room for error and can readily assure superior
+                        product-quality to its clients. At Miswar Fashion Wears, client satisfaction is company-
+                        satisfaction.</p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="about-img pb-bottom">
+                    <img src="{% static 'img/gallery/about2.png' %}" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-tittle mb-60 text-center pt-10">
+                    <h2>Work Place Environment</h2>
+                    <p >As a responsible apparel producer, Miswar Fashion Wears provides employees a work environment high above the law-required level. Miswar Fashion Wears installed and has updated lighting, ventilation and ergonomics of its plants using latest technologies like bus bar for electrical fitting, overhead mirror reflectors for lamps, forced duct ventilation and so on.
+                        The goal is to exceed requirements of local legislation and reach the global standards, and thereby support clients’ images and sourcing principles. Clearly demarcated emergency routes & exits, smoke & fire detectors, consciously designed working lay-outs ensure a safe workplace for workers. As per ISO requirements, instructions and warning signs are posted in highly visible places, inside the factory and in local language (Bangla).
+                        </p>
+                        <p>
+                        Moreover, usage of metal gloves in times of fabric cutting, needle guard in time of sewing and such similar procedures reduces significantly work-related accidents in Miswar Fashion Wears.
+                    </p>
+                    <p>Besides being safe, Miswar Fashion Wears workplace offers a congenial & supporting environment for all: managerial staffs and workers work in mutual cooperation and respect.</p>
+                    <p> Miswar Fashion Wears consciously puts effort to empower woman not only by just recruiting more women in workforce, rather by undertaking some assertive programs to train & promote women in the higher levels.
+                    </p>
+                        
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

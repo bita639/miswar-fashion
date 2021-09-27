@@ -33,3 +33,5 @@ class Product(models.Model):
     def get_absolute_url(self):        
         return reverse('miswarfashionApp:product_detail',args=[self.id, self.slug])
 
+class Image(models.Model):
+    image = models.ImageField(upload_to="product-image", default='packageImage/blank.png', blank=True, null=True)
